@@ -1,0 +1,10 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {  
+    "webcomponent": {
+      "description": "Gera um novo web component dentro do workspace",
+      "factory": "./webcomponent/index#generateWebComponent",
+      "schema": "./webcomponent/schema.json"
+    }
+  }
+}

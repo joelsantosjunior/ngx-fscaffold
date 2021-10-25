@@ -1,0 +1,1 @@
+<p><%= dasherize(name) %> web component works!</p>

@@ -1,0 +1,29 @@
+{
+  "name": "ngx-fscaffold",
+  "version": "0.0.1",
+  "description": "Gerador de Webcomponents",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && cd ./my-test-app && npm link ../",
+    "test": "npm run build && jasmine src/**/*_spec.js"
+  },
+  "keywords": [
+    "schematics",
+    "webcomponents",
+    "microfrontends",
+    "angular elements"
+  ],
+  "author": "Joel S. Junior",
+  "license": "MIT",
+  "schematics": "./src/collection.json",
+  "dependencies": {
+    "@angular-devkit/core": "^12.2.10",
+    "@angular-devkit/schematics": "^12.2.10",
+    "typescript": "~4.3.2"
+  },
+  "devDependencies": {
+    "@schematics/angular": "^12.2.11",
+    "@types/jasmine": "~3.8.0",
+    "@types/node": "^12.11.1",
+    "jasmine": "^3.5.0"
+  }
+}

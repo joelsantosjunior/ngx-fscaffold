@@ -1,0 +1,18 @@
+import { 
+  Component, 
+  OnInit,
+  ViewEncapsulation
+} from '@angular/core';
+
+@Component({
+  templateUrl: './<%= dasherize(name) %>.component.html',
+  styleUrls: ['./<%= dasherize(name) %>.component.<%= style %>'],
+  encapsulation: ViewEncapsulation.ShadowDom,
+})
+export class <%= classify(name) %>Component implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void { }
+
+}

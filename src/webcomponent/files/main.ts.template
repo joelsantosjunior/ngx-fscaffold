@@ -1,0 +1,16 @@
+import { enableProdMode, ViewEncapsulation } from '@angular/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
+import { <%= classify(name) %>Module } from './<%= dasherize(name) %>.module';
+import { environment } from './environments/environment';
+
+if (environment.production) {
+  enableProdMode();
+}
+<% if(!!viewEncapsulation) { %>
+platformBrowserDynamic().bootstrapModule(<%= classify(name) %>Module, { defaultEncapsulation: ViewEncapsulation.ShadowDom })
+  .catch(err => console.error(err));
+<% } else { %>
+platformBrowserDynamic().bootstrapModule(<%= classify(name) %>Module)
+  .catch(err => console.error(err));
+<% } %>
