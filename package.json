@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Gerador de Webcomponents",
   "scripts": {
-    "build": "tsc -p tsconfig.json && cd ./my-test-app && npm link ../",
+    "build": "tsc -p tsconfig.json && cd ./teste-workspace && npm link ../",
     "test": "npm run build && jasmine src/**/*_spec.js"
   },
   "keywords": [
@@ -18,6 +18,7 @@
   "dependencies": {
     "@angular-devkit/core": "^12.2.10",
     "@angular-devkit/schematics": "^12.2.10",
+    "single-spa-angular": "^5.0.2",
     "typescript": "~4.3.2"
   },
   "devDependencies": {

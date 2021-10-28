@@ -5,6 +5,11 @@
       "description": "Gera um novo web component dentro do workspace",
       "factory": "./webcomponent/index#generateWebComponent",
       "schema": "./webcomponent/schema.json"
+    },
+    "project": {
+      "description": "Gera um novo projeto configurado como microfrontend",
+      "factory": "./project/index#generateProject",
+      "schema": "./project/schema.json"
     }
   }
 }
