@@ -1,28 +1,26 @@
-# Getting Started With Schematics
+# ngx-fscaddold
 
 This repository is a basic Schematic implementation that serves as a starting point to create and publish Schematics to NPM.
 
-### Testing
+### Instalação
 
-To test locally, install `@angular-devkit/schematics-cli` globally and use the `schematics` command line tool. That tool acts the same as the `generate` command of the Angular CLI, but also has a debug mode.
+```bash
+npm install --save-dev ngx-fscaffold
+```
 
-Check the documentation with
+Para entender melhor sobre o funcionamento dos schematics utilize o comando abaixo
 
 ```bash
 schematics --help
 ```
 
-### Unit Testing
+### Comandos Suportados
 
-`npm run test` will run the unit tests, using Jasmine as a runner and test framework.
+`ng g ngx-fscaffold:webcompoonent --name [name]` Responsável por gerar as estrutruas iniciais de um Angular web component.
+`ng g ngx-fscaffold:project --name [name] --prefix [prefix]` Responsável por gerar as estrutruas iniciais de um projeto angular configurado com o single-spa.
 
-### Publishing
+### Contribuindo com o projeto
 
-To publish, simply do:
-
-```bash
-npm run build
-npm publish
-```
+TBD;
 
 That's it!
