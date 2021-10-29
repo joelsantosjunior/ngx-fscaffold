@@ -1,9 +1,9 @@
 {
   "name": "ngx-fscaffold",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Gerador de Webcomponents",
   "scripts": {
-    "build": "tsc -p tsconfig.json && cd ./teste-workspace && npm link ../",
+    "build": "tsc -p tsconfig.json",
     "test": "npm run build && jasmine src/**/*_spec.js"
   },
   "keywords": [
