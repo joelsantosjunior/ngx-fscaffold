@@ -5,7 +5,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { <%= classify(name) %>Component } from './<%= dasherize(name) %>.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [<%= classify(name) %>Component],
+  entryComponents: [<%= classify(name) %>Component],
   imports: [
     BrowserModule,
     CommonModule
