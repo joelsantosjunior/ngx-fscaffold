@@ -1,6 +1,6 @@
 # ngx-fscaffold
 
-This repository is a basic Schematic implementation that serves as a starting point to create and publish Schematics to NPM.
+Este projeto é um gerador de código baseado no Angular Schematics com o objetivo de gerar estruturas iniciais para webcomponents e microfrontends utilizando a ferramenta single-spa.
 
 ### Instalação
 

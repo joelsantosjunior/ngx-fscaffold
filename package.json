@@ -1,6 +1,6 @@
 {
   "name": "ngx-fscaffold",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Gerador de Webcomponents",
   "scripts": {
     "build": "tsc -p tsconfig.json",
@@ -13,6 +13,9 @@
     "angular elements"
   ],
   "author": "Joel S. Junior",
+  "maintainers": [
+    "Joel S. Junior"
+  ],
   "license": "MIT",
   "schematics": "./src/collection.json",
   "dependencies": {
