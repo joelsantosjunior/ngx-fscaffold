@@ -21,13 +21,15 @@ export function  addFiles(options: any): Rule {
                 ...options,
                 ...strings
             }),
-            move(normalize(`/projects/${name}/src/@core`))
+            move(normalize(`/projects/${name}/src`))
         ]);
 
         const rule = mergeWith(templateSource, MergeStrategy.Overwrite);
 
         context.logger.info(`✅️ Arquivo 'load-external.service.ts' gerado`);
         context.logger.info(`✅️ Arquivo 'load-external.service.spec.ts' gerado`);
+        context.logger.info(`✅️ Arquivo 'app.module.ts' modificado`);
+        context.logger.info(`✅️ Arquivo 'app-routing.module.ts' modificado`);
 
         return rule(host, context);
     }
